@@ -1,0 +1,21 @@
+
+#fillup {
+    font-size: 15px;
+    margin-bottom: 55px;
+}
+
+#form::before {
+    height: 844px;
+    width: 100%;
+    opacity: 0.5;
+}
+
+#form h1 {
+    font-size: 1.5rem;
+    margin: 15px 27px;
+    margin-top: 160px;
+}
+
+.details {
+    margin: 4px;
+}

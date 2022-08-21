@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FIT n FINE | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">FIT n FINE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/book.html">Book your slot</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <div class="mx-2 my-1">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#signupModal">Sign
+                            Up</button>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">Log
+                            In</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Modal -->
+        <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Sign Up to FITnFINE</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="text-center" id="signup">
+                            <img class="mb-4" src="logo.png" alt="" width="72" height="57">
+                            <h1 class="h3 mb-3 fw-normal"><b>Welcome to FIT n FINE</b></h1>
+                            <h4 class="h3 mb-3 fw-normal"><b>Please Sign Up</b></h4>
+                            <div id="choice">
+                                <div class="pat"><a href="/patient.html"><b>Sign Up as patient</b></a></div>
+                                <div class="doc"><a href="/doctor.html"><b>Sign Up as doctor</b></a></div>
+                            </div>
+                            <p class="mt-5 mb-3 text-muted">© 2017–2022</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Log In to MyTODOlist</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="text-center">
+                            <img class="mb-4" src="TO-DO.png" alt="" width="72" height="57">
+                            <h1 class="h3 mb-3 fw-normal">Log In to your account</h1>
+
+
+                            <div class="form-floating my-2">
+                                <input type="email" class="form-control" id="floatingInputlogin"
+                                    placeholder="name@example.com">
+                                <label for="floatingInputlogin">Email address</label>
+                            </div>
+                            <div class="form-floating my-2">
+                                <input type="password" class="form-control" id="floatingPasswordlogin"
+                                    placeholder="Password">
+                                <label for="floatingPasswordlogin">Password</label>
+                            </div>
+
+
+                            <div class="checkbox mb-3 mt-3">
+                                <label>
+                                    <input type="checkbox" value="remember-me"> Remember me
+                                </label>
+                            </div>
+                            <button class="w-100 btn btn-lg btn-primary" type="submit" onclick="login()">Log in</button>
+                            <p class="mt-5 mb-3 text-muted">© 2017–2022</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                    class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+                    class=""></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img class="bd-placeholder-img" width="100%" height="450px" src="bg-4.jpeg" alt="">
+                    <div class="container">
+                        <div class="carousel-caption text-start text-dark">
+                            <h2>Appoinment cost starts from 0 Rs.</h2>
+                            <h5>go and take benifits of virtual checkups</h5>
+                            <p>
+                            <div class="mx-2 my-1">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#signupModal">Sign
+                                    Up</button>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                    data-bs-target="#loginModal">Log
+                                    In</button>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img class="bd-placeholder-img" width="100%" height="450px" src="bg-2.jpeg" alt="">
+                    <div class="container">
+                        <div class="carousel-caption text-center text-dark">
+                            <h1>Welcome to FITnFINE.COM</h1>
+                            <h5>Your health, our solution</h5>
+                            <p>
+                            <div class="mx-2 my-1">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#signupModal">Sign
+                                    Up</button>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                    data-bs-target="#loginModal">Log
+                                    In</button>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="bd-placeholder-img" width="100%" height="450px" src="bg-3.jpeg" alt="">
+                    <div class="container">
+                        <div class="carousel-caption text-end text-dark">
+                            <h3>Freelancing Opportunity for medical students</h3>
+                            <h5>learning plus earning opportunity for medical students</h5>
+                            <p>
+                            <div class="mx-2 my-1">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#signupModal">Sign
+                                    Up</button>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                    data-bs-target="#loginModal">Log
+                                    In</button>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <!-- Marketing messaging and featurettes
+        ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div class="container marketing mt-4">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="vdc.jpeg" alt="">
+
+                    <h2 class="fw-normal text-center">Video Calling feature</h2>
+                    <p class="text-center">Video Call your doctor and talk about your problem</p>
+                    <p class="text-center"><a class="btn btn-primary" href="#">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="vc.jpeg" alt="">
+
+                    <h2 class="fw-normal text-center">Voice Calling feature</h2>
+                    <p class="text-center">Call your doctor and talk about your problem</p>
+                    <p class="text-center"><a class="btn btn-primary" href="#">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="txt.jpeg" alt="">
+
+                    <h2 class="fw-normal text-center">Messaging Feature</h2>
+                    <p class="text-center">Set your virtual appoinment to your doctor</p>
+                    <p class="text-center"><a class="btn btn-primary" href="#">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+
+
+            <!-- START THE FEATURETTES 
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span
+                            class="text-muted">It’ll blow your mind.</span></h2>
+                    <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
+                        prose here.</p>
+                </div>
+                <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                            dy=".3em">500x500</text>
+                    </svg>
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See
+                            for yourself.</span></h2>
+                    <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of
+                        how this layout would work with some actual real-world content in place.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                            dy=".3em">500x500</text>
+                    </svg>
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span
+                            class="text-muted">Checkmate.</span></h2>
+                    <p class="lead">And yes, this is the last block of representative placeholder content. Again, not
+                        really intended to be actually read, simply here to give you a better view of what this would
+                        look like with some actual content. Your content.</p>
+                </div>
+                <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                            dy=".3em">500x500</text>
+                    </svg>
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">-->
+
+            <!-- /END THE FEATURETTES -->
+
+        </div><!-- /.container -->
+
+
+        <!-- FOOTER -->
+        <footer class="footer mt-auto py-3">
+            <div class="container">
+                <span class="text-muted">
+                    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                    </ul>
+                    <p class="text-center text-muted">© 2022 FITnFINE, Inc</p>
+                </span>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign Up to MyTODOlist</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="text-center">
+                        <img class="mb-4" src="TO-DO.png" alt="" width="72" height="57">
+                        <h1 class="h3 mb-3 fw-normal">Welcome to MyTODOlist</h1>
+                        <h1 class="h3 mb-3 fw-normal">Please Sign Up</h1>
+
+                        <div class="form-floating my-2">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Enter your name">
+                            <label for="floatingInput">Your Name</label>
+                        </div>
+                        <div class="form-floating my-2">
+                            <input type="email" class="form-control" id="floatingInputsignup"
+                                placeholder="name@example.com">
+                            <label for="floatingInputsignup">Email address</label>
+                        </div>
+                        <div class="form-floating my-2">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Password</label>
+                        </div>
+                        <div class="form-floating my-2">
+                            <input type="password" class="form-control" id="floatingConfirmPassword"
+                                placeholder="Password">
+                            <label for="floatingConfirmPassword">Confirm Password</label>
+                        </div>
+
+                        <div class="checkbox mb-3 mt-3">
+                            <label>
+                                <input type="checkbox" value="remember-me"> Remember me
+                            </label>
+                        </div>
+                        <button class="w-100 btn btn-lg btn-primary" type="submit" onclick="signin()">Sign Up</button>
+                        <p class="mt-5 mb-3 text-muted">© 2017–2022</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Log In to MyTODOlist</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="text-center">
+                        <img class="mb-4" src="TO-DO.png" alt="" width="72" height="57">
+                        <h1 class="h3 mb-3 fw-normal">Log In to your account</h1>
+
+
+                        <div class="form-floating my-2">
+                            <input type="email" class="form-control" id="floatingInputlogin"
+                                placeholder="name@example.com">
+                            <label for="floatingInputlogin">Email address</label>
+                        </div>
+                        <div class="form-floating my-2">
+                            <input type="password" class="form-control" id="floatingPasswordlogin"
+                                placeholder="Password">
+                            <label for="floatingPasswordlogin">Password</label>
+                        </div>
+
+
+                        <div class="checkbox mb-3 mt-3">
+                            <label>
+                                <input type="checkbox" value="remember-me"> Remember me
+                            </label>
+                        </div>
+                        <button class="w-100 btn btn-lg btn-primary" type="submit" onclick="login()">Log in</button>
+                        <p class="mt-5 mb-3 text-muted">© 2017–2022</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
